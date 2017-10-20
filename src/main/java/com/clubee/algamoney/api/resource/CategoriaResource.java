@@ -36,8 +36,7 @@ public class CategoriaResource {
 		
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{codigo}")
 				.buildAndExpand(categoriaSalva.getCodigo()).toUri();
-		//response.setHeader("Location", uri.toASCIIString());
-		
+				
 		return ResponseEntity.created(uri).body(categoriaSalva);
 	}
 	
