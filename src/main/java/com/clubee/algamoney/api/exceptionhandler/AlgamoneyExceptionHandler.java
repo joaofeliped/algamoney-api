@@ -44,7 +44,6 @@ public class AlgamoneyExceptionHandler extends ResponseEntityExceptionHandler {
 	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
 			HttpHeaders headers, HttpStatus status, WebRequest request) {
 		
-		
 		List<Erro> erros = criarListaDeErros(ex.getBindingResult());
 		
 		return handleExceptionInternal(ex, erros, headers, status, request);
