@@ -1,4 +1,4 @@
-package com.clubee.algamoney.api;
+package com.clubee.algamoney.api.security;
 
 import java.util.Collection;
 import java.util.HashSet;
